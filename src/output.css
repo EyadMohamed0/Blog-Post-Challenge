@@ -8,16 +8,12 @@
     --font-mono: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono",
       "Courier New", monospace;
     --color-gray-500: oklch(55.1% 0.027 264.364);
-    --color-gray-900: oklch(21% 0.034 264.665);
     --color-gray-950: oklch(13% 0.028 261.692);
     --color-black: #000;
     --color-white: #fff;
     --spacing: 0.25rem;
-    --text-xl: 1.25rem;
-    --text-xl--line-height: calc(1.75 / 1.25);
     --text-2xl: 1.5rem;
     --text-2xl--line-height: calc(2 / 1.5);
-    --font-weight-normal: 400;
     --font-weight-medium: 500;
     --font-weight-bold: 700;
     --font-weight-extrabold: 800;
@@ -258,10 +254,6 @@
   .py-1 {
     padding-block: calc(var(--spacing) * 1);
   }
-  .text-xl {
-    font-size: var(--text-xl);
-    line-height: var(--tw-leading, var(--text-xl--line-height));
-  }
   .text-\[12px\] {
     font-size: 12px;
   }
@@ -310,16 +302,14 @@
     --tw-duration: 300ms;
     transition-duration: 300ms;
   }
-  .hover\:text-\[\#F4D04E\] {
-    &:hover {
-      @media (hover: hover) {
-        color: #F4D04E;
-      }
-    }
-  }
   .sm\:h-\[522px\] {
     @media (width >= 40rem) {
       height: 522px;
+    }
+  }
+  .sm\:w-\[384px\] {
+    @media (width >= 40rem) {
+      width: 384px;
     }
   }
   .sm\:text-2xl {
